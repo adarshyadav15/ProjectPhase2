@@ -1,0 +1,18 @@
+
+<h1>Project Phase 2</h1>
+
+<div>
+  <button (click)="showHome()">Home |</button>
+  <button (click)="showCart()">Cart |</button>
+  <button (click)="showAdmin()">Admin Login </button>
+</div>
+
+<br><br><hr>
+<div>
+  <app-home *ngIf='choice=="home"'></app-home>
+  <app-cart *ngIf='choice=="cart"'></app-cart>
+  <app-login *ngIf='choice=="admin"'></app-login>
+</div>
+
+
+
