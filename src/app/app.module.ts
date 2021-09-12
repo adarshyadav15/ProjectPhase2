@@ -13,7 +13,8 @@ import { IndexComponent } from './index/index.component';
 import { MyServiceService } from './my-service.service';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { CheckoutComponent } from './checkout/checkout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +25,14 @@ import { ProductListComponent } from './product-list/product-list.component';
     TestingComponent,
     IndexComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [MyServiceService],
   bootstrap: [AppComponent]

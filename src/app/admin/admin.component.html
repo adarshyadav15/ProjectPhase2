@@ -8,14 +8,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor='let c of items'>
-            <td>{{c.itemName}}</td> <td>{{c.itemPrice}}</td> <td><button (click)='remove(c)'>Remove</button></td>
+        <tr *ngFor='let c of products'>
+            <td>{{c.name}}</td> <td>{{c.price}}</td> <td><button (click)='remove(c)'>Remove</button></td>
         </tr>
     </tbody>
 </table>
 <br><hr>
 <h2>Add a New Item</h2>
 <div>
+    
     Item Name : 
     <input type="text" [(ngModel)]='name' name="name" id="name" value="">
     Item Price :
@@ -40,8 +41,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor='let c of itemadd'>
-            <td>{{c.itemName}}</td> <td>{{c.itemPrice}}</td> <td><button (click)='add(c)'>Add</button></td>
+        <tr *ngFor='let c of deleted'>
+            <td>{{c.name}}</td> <td>{{c.price}}</td> <td><button (click)='add(c)'>Add</button></td>
         </tr>
     </tbody>
 </table>

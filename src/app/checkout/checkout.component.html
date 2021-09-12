@@ -1,0 +1,23 @@
+<h1>Thank you for Your Purchase :)</h1>
+<h3>Order Summary</h3>
+<h4>List of Items</h4>
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price }}</span>
+
+</div>
+<div class="cart-item">
+    <span>Total Price</span>
+    <span>{{getSum()}}</span>
+
+</div>
+<div class="cart-item">
+    <span>Name Of Customer</span>
+    <span>{{name}} </span>
+
+</div>
+<div class="cart-item" style="height: 200px;">
+    <span>Address</span>
+    <span>{{address}}</span>
+</div>
+<button (click)="home()" style="margin-left: 30%;">Home</button>
